@@ -23,4 +23,4 @@ jobs:
 
       - name: deploy
         run: |
-          docker compose up -d --build
+          docker compose -f Docker-compose.yml up -d --build
