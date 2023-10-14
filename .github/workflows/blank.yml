@@ -14,11 +14,13 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v1
 
-      - name: Deploy to my EC2 instance
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          SOURCE: "./"
-          REMOTE_HOST: ${{ secrets.HOST_DNS }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: "home"
+      - name: configure docker host
+        uses: khaledez/configure-docker-host@v1
+        with:
+          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+          host: ${{ secrets.DNS_HOST }}
+          user: ubuntu
+
+      - name: deploy
+        run: |
+          docker compose up -d --build
