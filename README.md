@@ -51,3 +51,13 @@ Our Instagram clone follows a modular architecture, ensuring separation of conce
 
 ## 3. Database Design: 💽
 Incorporating AWS RDS into our project ensured a robust, scalable, and managed relational database solution, allowing the development team to focus on application features and logic rather than database administration tasks.
+
+---
+
+# A Developer's Routes Guide ➡️ ✨
+## Link on wiki 👇
+  [A Routes Developer's Guide ➡️ ✨](https://github.com/Husam-AbuZina/instagram-final-project-gsg-main/wiki/A-Developer's-Routes-Guide-➡%EF%B8%8F-✨)
+
+# Detailed Documentation of the project 📚
+## Link on wiki 👇
+   [Full Documentation 📚](https://github.com/Husam-AbuZina/instagram-final-project-gsg-main/wiki)
